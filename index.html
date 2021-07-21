@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Assessment</title>
+</head>
+<body>
+    <div class = "cont">
+        <input type="search" placeholder= "&#xFE0E; Search" id="searchbar">
+        <right>
+            <img src="avtar.jpeg" alt="" width="40px" style="float: right; border-radius: 50%; margin-right: 20px; margin-top: 10px;">
+            <span class="tool">&#9881; </span>
+        </right>
+        <!-- <span style="color: gray; width: 30px;"> &#x1F514;</span> -->
+    </div> 
+    <hr>
+    <div class='vr'></div>
+    <div class = "cont">
+        <p style="color: gray;">Org Folders > <strong style="color: black;">Jan 2021</strong></p><hr>
+    </div>
+    
+    <div id="tabs" style="display:none">
+        <a href="" id="x">x </a>
+        <img src="folder.jpeg" alt="" width="60px" style="float: left;">
+        <h2>Folders 1</h2>
+        
+        <div>
+          <a href="javascript:void(0)" onclick="openCity(event, 'London');">
+            <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Details</div>
+          </a>
+          <a href="javascript:void(0)" onclick="openCity(event, 'Paris');">
+            <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Comments</div>
+          </a>
+        </div>
+        
+        <div id="London" class="city" style="display:none"> 
+            <div>
+                <p><br><br>Type <b><right style="float: right;">Org Folder</right></b></p>
+                
+            </div>
+            <div>
+                <p>Location <b><right style="float: right;">Org Folder/ Jan 2021</right></b></p>
+                
+            </div>
+            <div>
+                <p>Owner <b><right style="float: right;">Aditya RM</right></b></p>
+                
+            </div>
+            <div>
+                <p>Openned at <b><right style="float: right;">June 23, 2021</right></b></p>
+                
+            </div>
+            <div>
+                <p>Created at <b><right style="float: right;"> May 26, 2021</right></b></p>
+                
+            </div>
+        </div>
+      
+        <div id="Paris" class="city" style="display:none;">
+            <div >
+                <img src="avtar.jpeg" alt="" width="25px" style="float: left;">
+                <h5 style="margin-top: 70px;"><strong>Eduardo Benz</Strong></h5>
+                <sub style="color: grey;">3 mins ago</sub>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p> <hr>
+            </div>
+            <div >
+                <img src="avtar.jpeg" alt="" width="25px" style="float: left;">
+                <h5><strong>Eduardo Benz</Strong></h5>
+                <sub style="color: grey;">3 mins ago</sub>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p> 
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="folders">
+            <img src="folder.jpeg" alt="" width="50px" style="float: left;"><p>Folder 1 <right style= "margin-left: 30px; color: grey;">(235)</right> </p>
+            <span class ="heart">&#x2764;</span>
+            <a href="javascript:void(0)" id="info" onclick="toggleHide()">&#x1F6C8;</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="folders">
+            <img src="folder.jpeg" alt="" width="50px" style="float: left;"><p>Folder 2 <right style= "margin-left: 30px; color: grey;">(234)</right> </p>
+            <span class ="heart">&#x2764;</span>
+            <a href="" class="info" onclick="toggleHide()">&#x1F6C8;</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="folders">
+            <img src="folder.jpeg" alt="" width="50px" style="float: left;"><p>Folder 3 <right style= "margin-left: 30px; color: grey;">(234)</right> </p>
+            <span class ="heart">&#x2764;</span>
+            <a href="" class="info" onclick="toggleHide()">&#x1F6C8;</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="folders">
+            <img src="folder.jpeg" alt="" width="50px" style="float: left;"><p>Folder 4 <right style= "margin-left: 30px; color: grey;">(212)</right> </p>
+            <span class ="heart">&#x2764;</span>
+            <a href="" class="info" onclick="toggleHide()">&#x1F6C8;</a>
+        </div>
+    </div>
+
+    <script>
+        const a = document.querySelector('#info');
+        const tab = document.querySelector('#tabs');
+
+        a.addEventListener('click', ()=>{
+            if(tab.style.display == 'none'){
+                tab.style.display = 'block';
+            } 
+            // else{
+            //     tab.style.display = 'none';
+            // }
+        });
+
+
+        function openCity(evt, cityName) {
+          var i, x, tablinks;
+          x = document.getElementsByClassName("city");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablink");
+          for (i = 0; i < x.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" w3-border-blue", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.firstElementChild.className += " w3-border-blue";
+        }
+    </script>
+
+</body>
+</html>
+

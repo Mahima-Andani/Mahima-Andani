@@ -1,0 +1,86 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+.cont{
+    margin-top: 15px;
+    margin-left: 90px;
+
+}
+.container{
+margin-left: 80px;
+}
+#searchbar
+{
+    width: 45%;
+    height: 35px;
+    border: 1.5px lightgray;
+    border-style: solid;
+    border-radius: 5%;
+}
+.folders{
+    float: left;
+    border: 1px lightgray;
+    border-style: solid;
+    border-radius: 4%;
+    padding: -12px;
+    margin: 2px;
+    margin-left: 20px;
+    width: 200px;
+    height: 80px;
+
+}
+#tabs{
+    border-left: 2px solid lightgray;
+    padding: 5px;
+    width: 300px;
+    height: 450px;
+    float: right;
+    text-decoration: none;
+}
+
+.info
+{
+    text-decoration: none;
+    margin-left: 120px;
+    color: gray;
+    font-size: 20px;
+}
+#info
+{
+    text-decoration: none;
+    margin-left: 120px;
+    color: rgb(0, 174, 255);
+    font-size: 20px;
+}
+.heart{
+    margin-left: 10px; 
+    font-size: 20px; 
+    color: gray;
+}
+
+.tool{
+    color: gray; 
+    font-size: 40px; 
+    margin-right: 30px; 
+    float: right; 
+}
+#x{
+    float: right; 
+    text-decoration: none; 
+    color: grey;
+}
+span{
+    cursor: pointer;
+}
+.city h5
+{
+    line-height: 1px;
+
+}
+.vr{
+    border-left: 2px solid lightgray;
+    height: 100%;
+    position: absolute;
+    left: 5%;
+    top: 0;
+}
